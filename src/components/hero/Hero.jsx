@@ -1,5 +1,7 @@
 import Carousel from 'react-material-ui-carousel';
+import { FaRegPlayCircle } from "react-icons/fa";
 import { Paper } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 import './Hero.css';
 
@@ -16,6 +18,13 @@ const Hero = ({movies}) => {
                                     <div className='movie-detail'>
                                         <div className="movie-poster">
                                             <img src={movie.poster} alt="" />
+                                        </div>
+                                        <div className="movie-buttons-container">
+                                            <Link to={`/Trailer/${movie.trailerLink.substring(movie.trailerLink.length - 11)}`}>
+                                            <div className="play-button-icon-container">
+                                                <FaRegPlayCircle className="play-button-icon"/>
+                                            </div>
+                                            </Link>
                                         </div>
                                         <div className="movie-title">
                                             <h4>{movie.title}</h4>

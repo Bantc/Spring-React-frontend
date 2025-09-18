@@ -34,13 +34,43 @@
 .movie-detail {
     position: absolute;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     width: 100%;
     top: 200px;
+    left: 100px;
 }
 
 .movie-title {
     color: white;
     display: flex;
     align-items: top;
+}
+
+.movie-buttons-container {
+    display: flex;
+    padding-top: 120px;
+    padding-left: 30px;
+    justify-content: space-between;
+}
+
+.play-button-icon-container {
+    padding: 0px;
+    margin: 0px;
+    width: 150px;
+}
+
+.play-button-icon {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.play-button-icon:hover {
+    padding: 0px;
+    margin: 0px;
+    color: rgb(185, 185, 185);
+    transition: 0.3s;
+    cursor: pointer;
 }
